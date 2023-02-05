@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class Health : MonoBehaviour
@@ -8,6 +9,13 @@ public class Health : MonoBehaviour
     public int health = 100;
     public Image barFill;
 
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Return))
+        {
+            health = 1000;
+        }
+    }
     public void ReceiveDamage(int value)
     {
         health-=value;
@@ -27,6 +35,7 @@ public class Health : MonoBehaviour
     public void GameOver()
     {
         Debug.Log("You died");
+        SceneManager.LoadScene("GameOver");
     }
 
     public void UpdateBar()
