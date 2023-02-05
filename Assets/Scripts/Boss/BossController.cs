@@ -9,8 +9,11 @@ public class BossController : MonoBehaviour
     public GameObject slam;
     GameObject generatedSlam;
 
+    protected bool isAngry;
+
     void Start()
     {
+        isAngry = false;
         player = GameObject.FindGameObjectWithTag("Player").transform;
         animator = GetComponent<Animator>();
     }
@@ -18,6 +21,8 @@ public class BossController : MonoBehaviour
 
     void Update()
     {
+        if (!isAngry) { return; }
+
         float dist = Vector3.Distance(transform.position, player.position);
         animator.SetFloat("Distance", dist);
     }
@@ -31,5 +36,10 @@ public class BossController : MonoBehaviour
     public void DestroySlam()
     {
         Destroy(generatedSlam);
+    }
+
+    public void beAngryMessage()
+    {
+        isAngry = true;
     }
 }
