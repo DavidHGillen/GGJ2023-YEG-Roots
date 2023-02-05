@@ -13,6 +13,7 @@ public class CharacterController : StateMachine
     public float rollCooldown = 1f;
     public float attackCooldown = 0.5f;
     public GameObject attackRange;
+    public GameObject particles;
     public InputReader InputReader { get; private set; }
     public Animator Animator;
     public Rigidbody rb { get; private set; }
@@ -21,7 +22,7 @@ public class CharacterController : StateMachine
 
     public Vector3 Velocity { get; private set; }
     public Vector2 moveComposite { get; private set; }
-    private Vector3 lastMovement;
+    private Vector3 lastMovement = new Vector3(0,0,-1);
 
 
     bool rolling;
@@ -54,6 +55,7 @@ public class CharacterController : StateMachine
         currentSpeed = MovementSpeed;
 
         attackRange.SetActive(false);
+        particles.SetActive(false);
 
         InputReader = GetComponent<InputReader>();
         rb = GetComponent<Rigidbody>();
@@ -63,7 +65,7 @@ public class CharacterController : StateMachine
 
     private void Update()
     {        
-        Velocity = new Vector3(moveComposite.x,0,moveComposite.y);
+        Velocity = new Vector3(moveComposite.x,rb.velocity.y,moveComposite.y);
         if(Velocity.magnitude>0) lastMovement = Velocity;
         Animator.SetFloat("VelX", Velocity.x);
         Animator.SetFloat("VelY", Velocity.z);
@@ -81,37 +83,45 @@ public class CharacterController : StateMachine
 
     void OnRoll()
     {
+        particles.SetActive(true);
+        if (!rolling) rb.AddRelativeForce(RollForce*lastMovement.normalized);
         rolling = true;
         StartCoroutine(RollCooldown());
-        if(!rolling)rb.AddRelativeForce(RollForce*lastMovement.normalized);
     }
 
     void OnAttack()
     {
         attacking = true;
+        Animator.SetTrigger("Attack");
         StartCoroutine(AttackCooldown());
         attackRange.transform.position = transform.position + lastMovement;
         attackRange.SetActive(true);
     }
 
-    void EndAttack() { }
+    public void EndAttack()
+    {
+        
+    }
 
     IEnumerator RollCooldown()
     {
         yield return new WaitForSeconds(rollCooldown);
         rolling = false;
+        particles.SetActive(false);
     }
     IEnumerator AttackCooldown()
     {
         yield return new WaitForSeconds(attackCooldown);
-        attackRange.SetActive(false);
         attacking = false;
+        attackRange.SetActive(false);
     }
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Root")) {
             currentSpeed = alteratedMovementSpeed;
+            if(!rolling) GetComponent<Health>()?.ReceiveDamage(20);
+            //rb.AddRelativeForce(Vector3.up*100);
         }
     }
     private void OnTriggerExit(Collider other)
