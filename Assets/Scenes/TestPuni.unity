@@ -280,7 +280,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 320945005}
-  m_LocalRotation: {x: 0.268348, y: 0.000000016575294, z: -0.0000000046173003, w: 0.96332204}
+  m_LocalRotation: {x: 0.268348, y: -0.00000001657528, z: 0.0000000046172968, w: 0.96332204}
   m_LocalPosition: {x: 0, y: 6.48, z: -12.167}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -695,7 +695,6 @@ GameObject:
   - component: {fileID: 404223363}
   - component: {fileID: 404223365}
   - component: {fileID: 404223364}
-  - component: {fileID: 404223366}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -817,6 +816,7 @@ MonoBehaviour:
   rollCooldown: 2
   attackCooldown: 0.5
   attackRange: {fileID: 1822956103}
+  Animator: {fileID: 1809989874}
   currentSpeed: 0
 --- !u!114 &404223365
 MonoBehaviour:
@@ -849,26 +849,6 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
---- !u!95 &404223366
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 404223358}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: e5e94a4150441704a91c893919a1a3fd, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &409488233
 GameObject:
   m_ObjectHideFlags: 0
@@ -1400,7 +1380,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1762374912}
-  m_LocalRotation: {x: 0.268348, y: 0.000000016575294, z: -0.0000000046173003, w: 0.96332204}
+  m_LocalRotation: {x: 0.268348, y: -0.00000001657528, z: 0.0000000046172968, w: 0.96332204}
   m_LocalPosition: {x: 0, y: 6.48, z: -12.167}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1451,7 +1431,7 @@ GameObject:
   - component: {fileID: 1809989873}
   - component: {fileID: 1809989874}
   m_Layer: 0
-  m_Name: pfront-sprite_0
+  m_Name: CharacterSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

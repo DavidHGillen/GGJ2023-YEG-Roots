@@ -14,7 +14,7 @@ public class CharacterController : StateMachine
     public float attackCooldown = 0.5f;
     public GameObject attackRange;
     public InputReader InputReader { get; private set; }
-    public Animator Animator { get; private set; }
+    public Animator Animator;
     public Rigidbody rb { get; private set; }
 
     public float currentSpeed;
@@ -56,7 +56,6 @@ public class CharacterController : StateMachine
         attackRange.SetActive(false);
 
         InputReader = GetComponent<InputReader>();
-        Animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody>();
 
         SwitchState(new PlayerIdleState());
@@ -66,7 +65,8 @@ public class CharacterController : StateMachine
     {        
         Velocity = new Vector3(moveComposite.x,0,moveComposite.y);
         if(Velocity.magnitude>0) lastMovement = Velocity;
-        //Animator.SetFloat("velocity", Velocity.sqrMagnitude);
+        Animator.SetFloat("VelX", Velocity.x);
+        Animator.SetFloat("VelY", Velocity.z);
     }
 
     private void FixedUpdate()
