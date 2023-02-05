@@ -1,0 +1,460 @@
+fileFormatVersion: 2
+guid: b319760f64becbf468c4897bf75b7b9c
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 0
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: environmental-spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 1952
+        width: 730
+        height: 643
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00e19824fcb966e4baca1ebebf8e3c9b
+      internalID: -1843639693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: environmental-spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 862
+        y: 1879
+        width: 756
+        height: 679
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5616b3cc6a5d24408b9adb64a64cead
+      internalID: 379649310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: environmental-spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 1793
+        y: 1953
+        width: 1017
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98431007ba5c47f44b52410549de82bc
+      internalID: 814175966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: environmental-spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 70
+        width: 1159
+        height: 1733
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0aa6fbed60608f40a089962c179471c
+      internalID: 1187869912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: environmental-spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 1239
+        y: 815
+        width: 264
+        height: 356
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea0551d8051e95e4fb85a2ef825dd2f3
+      internalID: 1552597781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: environmental-spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 1375
+        y: 1169
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7096310a215e59449aaf5b7cb58a9412
+      internalID: -1419195849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: environmental-spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 1564
+        y: 815
+        width: 301
+        height: 446
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2b77ccd5c3dd304daee1e18228b8ee5
+      internalID: -1278084385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: environmental-spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 2242
+        y: 851
+        width: 673
+        height: 952
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bb71cbf9546aac4ba36e660858ffd74
+      internalID: 2001914593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: environmental-spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 1862
+        y: 910
+        width: 7
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 152ab3d04d8aae643a2a6f75817799b5
+      internalID: 1335927174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: environmental-spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 1799
+        y: 270
+        width: 257
+        height: 385
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b87dfb0fd6c3c724d8489c1a89ad7a83
+      internalID: -963680877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: environmental-spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 1490
+        y: 252
+        width: 257
+        height: 385
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0d0f715a53f279439c654c96bde75e9
+      internalID: 26824258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: environmental-spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 1186
+        y: 248
+        width: 257
+        height: 385
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8a59b4040485204090ccbe8d643d3bb
+      internalID: 1140829282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 9f1a6bfdce56d42438ae4d908a0e9da2
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      environmental-spritesheet_51: -1856457062
+      environmental-spritesheet_41: -944168981
+      environmental-spritesheet_57: -1113054107
+      environmental-spritesheet_47: -368315360
+      environmental-spritesheet_17: -1744190338
+      environmental-spritesheet_66: -1277482098
+      environmental-spritesheet_2: 814175966
+      environmental-spritesheet_7: 2001914593
+      environmental-spritesheet_16: 1944271641
+      environmental-spritesheet_21: 1398125829
+      environmental-spritesheet_53: 1344888056
+      environmental-spritesheet_23: -867119818
+      environmental-spritesheet_39: -1510567800
+      environmental-spritesheet_28: -1387405658
+      environmental-spritesheet_46: -1708734977
+      environmental-spritesheet_72: -1612022104
+      environmental-spritesheet_40: 139505149
+      environmental-spritesheet_54: -1347896264
+      environmental-spritesheet_50: -2020952029
+      environmental-spritesheet_65: -1241151008
+      environmental-spritesheet_38: 1272571254
+      environmental-spritesheet_13: -1603360991
+      environmental-spritesheet_20: 1523269660
+      environmental-spritesheet_9: -963680877
+      environmental-spritesheet_1: 379649310
+      environmental-spritesheet_3: 1187869912
+      environmental-spritesheet_34: -2000757042
+      environmental-spritesheet_11: 1140829282
+      environmental-spritesheet_55: -35517945
+      environmental-spritesheet_37: -805859825
+      environmental-spritesheet_69: 1034496421
+      environmental-spritesheet_29: -899268817
+      environmental-spritesheet_22: 160531520
+      environmental-spritesheet_62: 1953416353
+      environmental-spritesheet_43: 1710470523
+      environmental-spritesheet_31: 893629469
+      environmental-spritesheet_49: 130918114
+      environmental-spritesheet_71: -1659116925
+      environmental-spritesheet_12: -718923435
+      environmental-spritesheet_19: -980248543
+      environmental-spritesheet_61: -1849527171
+      environmental-spritesheet_0: -1843639693
+      environmental-spritesheet_18: 1860704843
+      environmental-spritesheet_25: 876594300
+      environmental-spritesheet_56: 1877711530
+      environmental-spritesheet_63: -1944751964
+      environmental-spritesheet_30: 1017622282
+      environmental-spritesheet_70: -1815085074
+      environmental-spritesheet_10: 26824258
+      environmental-spritesheet_8: 1335927174
+      environmental-spritesheet_32: 1318176151
+      environmental-spritesheet_44: 1837407397
+      environmental-spritesheet_45: 165220857
+      environmental-spritesheet_4: 1552597781
+      environmental-spritesheet_15: 1091191054
+      environmental-spritesheet_14: -1297715675
+      environmental-spritesheet_58: 2086481372
+      environmental-spritesheet_6: -1278084385
+      environmental-spritesheet_67: 1540210559
+      environmental-spritesheet_26: -1670512638
+      environmental-spritesheet_48: 528968544
+      environmental-spritesheet_64: 1170590105
+      environmental-spritesheet_68: 744913375
+      environmental-spritesheet_52: 1091714491
+      environmental-spritesheet_24: 720569316
+      environmental-spritesheet_27: -1759242922
+      environmental-spritesheet_33: -909203002
+      environmental-spritesheet_42: 1968974589
+      environmental-spritesheet_5: -1419195849
+      environmental-spritesheet_35: 1600246503
+      environmental-spritesheet_60: 1378027293
+      environmental-spritesheet_59: 1852787109
+      environmental-spritesheet_36: -898086911
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

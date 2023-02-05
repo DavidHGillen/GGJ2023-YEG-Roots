@@ -83,7 +83,7 @@ public class CharacterController : StateMachine
     {
         rolling = true;
         StartCoroutine(RollCooldown());
-        if(!rolling)rb.AddRelativeForce(RollForce*Velocity.normalized);
+        if(!rolling)rb.AddRelativeForce(RollForce*lastMovement.normalized);
     }
 
     void OnAttack()
