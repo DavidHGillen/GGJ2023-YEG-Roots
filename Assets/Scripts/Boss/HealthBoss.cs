@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class HealthBoss : MonoBehaviour
 {
-    int health;
+    int health = 200;
 
     public void Damage(int value)
     {
@@ -15,5 +15,14 @@ public class HealthBoss : MonoBehaviour
 
     private void Defeated()
     {
+        Destroy(gameObject);
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Attack"))
+        {
+            Damage(10);
+        }
     }
 }
