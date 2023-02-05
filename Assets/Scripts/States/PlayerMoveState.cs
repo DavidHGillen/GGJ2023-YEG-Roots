@@ -16,6 +16,5 @@ public class PlayerMoveState : State
 
     public override void Tick()
     {
-        throw new System.NotImplementedException();
     }
 }

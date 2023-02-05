@@ -4,18 +4,22 @@ using UnityEngine;
 
 public class PlayerIdleState : State
 {
+    Vector2 mov;
     public override void Enter()
     {
-        throw new System.NotImplementedException();
+      
     }
 
     public override void Exit()
     {
-        throw new System.NotImplementedException();
+        
     }
 
     public override void Tick()
     {
-        throw new System.NotImplementedException();
+        if (CharacterController.character.Velocity.magnitude > 0)
+        {
+            CharacterController.character.SwitchState(new PlayerMoveState());
+        }
     }
 }
