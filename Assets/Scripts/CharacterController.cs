@@ -65,7 +65,7 @@ public class CharacterController : StateMachine
 
     private void Update()
     {        
-        Velocity = new Vector3(moveComposite.x,rb.velocity.y,moveComposite.y);
+        Velocity = new Vector3(moveComposite.x,0,moveComposite.y);
         if(Velocity.magnitude>0) lastMovement = Velocity;
         Animator.SetFloat("VelX", Velocity.x);
         Animator.SetFloat("VelY", Velocity.z);

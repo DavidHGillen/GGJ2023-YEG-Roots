@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 36344612}
   - component: {fileID: 36344613}
   - component: {fileID: 4794668786029219017}
+  - component: {fileID: 4292603683323252489}
   m_Layer: 0
   m_Name: Boss1
   m_TagString: Untagged
@@ -151,3 +152,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   slam: {fileID: 6406344690642517430, guid: 25c9cf022441c75428732a56ee889d25, type: 3}
+--- !u!114 &4292603683323252489
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6814644993591529329}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab3dbaa1a9cee9742a16e2a5b610ad5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
