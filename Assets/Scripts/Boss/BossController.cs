@@ -6,6 +6,8 @@ public class BossController : MonoBehaviour
 {
     Transform player;
     Animator animator;
+    public GameObject slam;
+    GameObject generatedSlam;
 
     void Start()
     {
@@ -18,5 +20,16 @@ public class BossController : MonoBehaviour
     {
         float dist = Vector3.Distance(transform.position, player.position);
         animator.SetFloat("Distance", dist);
+    }
+
+    public void Slam()
+    {
+
+        generatedSlam = Instantiate(slam, transform);
+    }
+
+    public void DestroySlam()
+    {
+        Destroy(generatedSlam);
     }
 }

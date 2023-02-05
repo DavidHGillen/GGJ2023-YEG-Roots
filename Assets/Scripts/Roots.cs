@@ -8,14 +8,7 @@ public class Roots : MonoBehaviour
     public void EnableCollider()
     {
         collider.SetActive(true);
-        gameObject.tag = "Root";
+        collider.tag = "Root";
     }
 
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.CompareTag("Attack"))
-        {
-            Destroy(gameObject);
-        }
-    }
 }

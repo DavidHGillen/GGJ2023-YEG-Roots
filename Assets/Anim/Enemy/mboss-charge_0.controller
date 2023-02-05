@@ -13,7 +13,8 @@ AnimatorState:
   m_Transitions:
   - {fileID: -932734323100749775}
   - {fileID: 1335942575409677122}
-  m_StateMachineBehaviours: []
+  m_StateMachineBehaviours:
+  - {fileID: -5048860146373797646}
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 0
   m_WriteDefaultValues: 1
@@ -40,7 +41,8 @@ AnimatorState:
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 699393251170904646}
-  m_StateMachineBehaviours: []
+  m_StateMachineBehaviours:
+  - {fileID: -6885903645293102951}
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 0
   m_WriteDefaultValues: 1
@@ -89,6 +91,19 @@ AnimatorStateMachine:
   m_ExitPosition: {x: 800, y: 120, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
   m_DefaultState: {fileID: -4821675700594406055}
+--- !u!114 &-6885903645293102951
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c421f2ba3593c44fa4a9f02b5782821, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slam: {fileID: 6406344690642517430, guid: 25c9cf022441c75428732a56ee889d25, type: 3}
 --- !u!114 &-5086451862285239627
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -102,6 +117,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 6
+--- !u!114 &-5048860146373797646
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbe29f90748b88a41aba8d07e9f7ea2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  roots: {fileID: 123328075915335099, guid: 06f8f311d49c2a94eb40e64576ed6620, type: 3}
 --- !u!1102 &-4821675700594406055
 AnimatorState:
   serializedVersion: 6
@@ -220,7 +248,7 @@ AnimatorController:
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
-    m_DefaultBool: 0
+    m_DefaultBool: 1
     m_Controller: {fileID: 0}
   m_AnimatorLayers:
   - serializedVersion: 5
