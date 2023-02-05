@@ -4,11 +4,18 @@ using UnityEngine;
 
 public class Roots : MonoBehaviour
 {
+    public GameObject collider;
+    public void EnableCollider()
+    {
+        collider.SetActive(true);
+        gameObject.tag = "Root";
+    }
+
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Attack"))
         {
-            //cahnge velocity
+            Destroy(gameObject);
         }
     }
 }
