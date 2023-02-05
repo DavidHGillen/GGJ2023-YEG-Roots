@@ -121,7 +121,7 @@ public class CharacterController : StateMachine
     {
         if (other.CompareTag("Root")) {
             currentSpeed = alteratedMovementSpeed;
-            if(!rolling) GetComponent<Health>()?.ReceiveDamage(20);
+            if(!rolling) GetComponent<Health>()?.ReceiveDamage(5);
             //rb.AddRelativeForce(Vector3.up*100);
         }
     }

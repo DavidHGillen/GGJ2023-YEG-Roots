@@ -26,7 +26,7 @@ public class Health : MonoBehaviour
 
     public void GameOver()
     {
-
+        Debug.Log("You died");
     }
 
     public void UpdateBar()
