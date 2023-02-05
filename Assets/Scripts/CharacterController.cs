@@ -84,6 +84,7 @@ public class CharacterController : StateMachine
     void OnRoll()
     {
         particles.SetActive(true);
+        Animator.SetTrigger("Roll");
         if (!rolling) rb.AddRelativeForce(RollForce*lastMovement.normalized);
         rolling = true;
         StartCoroutine(RollCooldown());
