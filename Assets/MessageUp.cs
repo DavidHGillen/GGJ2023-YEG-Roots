@@ -8,6 +8,6 @@ public class MessageUp : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        gameObject.SendMessageUpwards(UpMessage);
+        if(other.CompareTag("Player"))gameObject.SendMessageUpwards(UpMessage);
     }
 }
