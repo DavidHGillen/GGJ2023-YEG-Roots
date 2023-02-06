@@ -29,6 +29,7 @@ public class BossController : MonoBehaviour
 
     public void Slam()
     {
+        if (!isAngry) { return; }
 
         generatedSlam = Instantiate(slam, transform);
     }
