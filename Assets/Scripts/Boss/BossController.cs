@@ -21,6 +21,7 @@ public class BossController : MonoBehaviour
 
     void Update()
     {
+        animator.SetBool("Active", isAngry);
         if (!isAngry) { return; }
 
         float dist = Vector3.Distance(transform.position, player.position);

@@ -18,7 +18,7 @@ public class HealthBoss : MonoBehaviour
     private void Defeated()
     {
        if(!isBoss) Destroy(gameObject);
-        SceneManager.LoadScene("EndScene");
+        else SceneManager.LoadScene("EndScene");
     }
 
     private void OnTriggerEnter(Collider other)
